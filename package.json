@@ -1,0 +1,23 @@
+{
+  "name": "rvjanus",
+  "version": "1.0.0",
+  "description": "RV Adaptation",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "server": "http-server .",
+    "start": "npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "dependencies": {
+    "async": "",
+    "basic-auth": "",
+    "express": "^4.17.1",
+    "fs": "",
+    "getstats": "^1.2.0",
+    "http-server": "^0.12.3",
+    "zeromq": "^5.2.8"
+  }
+}

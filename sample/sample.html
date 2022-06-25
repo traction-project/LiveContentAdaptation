@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Live Stream Adaptation</title>
+<script type="text/javascript" src=".././externaljs/adapter.min.js"></script>
+<script type="text/javascript" src=".././externaljs/jquery.min.js" ></script>
+<script type="text/javascript" src=".././externaljs/jquery.blockUI.min.js" ></script>
+<script type="text/javascript" src=".././externaljs/bootstrap.min.js"></script>
+<script type="text/javascript" src=".././externaljs/bootbox.min.js"></script>
+<script type="text/javascript" src=".././externaljs/spin.min.js"></script>
+<script type="text/javascript" src="../src/janus.js" ></script>
+<script type="text/javascript" src="../src/streamadapt.js"></script>
+<script type="text/javascript" src="../src/bandwidthhandler.js"></script>
+<script type="text/javascript" src="../src/methods.js"></script>
+<link rel="stylesheet" href=".././externaljs/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href=".././externaljs/font-awesome.min.css"/>
+<link rel="stylesheet" href=".././externaljs/toastr.min.css"/>
+
+<style>
+	h1 {
+	  text-align: center;
+	}
+</style>
+
+</head>
+<body>
+	<h1>
+		Live Stream Adaptation
+	</h1>
+	<button class="btn btn-default" autocomplete="off" id="start">Start Stream</button>
+	<div class="input-group margin-bottom-md hide" id="registernow">
+		<span class="input-group-addon">Enter your display name</span>
+		<input autocomplete="off" class="form-control" type="text" placeholder="Choose a display name" id="username" onkeypress="return checkEnter(this, event);" />
+		<span class="input-group-btn">
+			<button class="btn btn-success" autocomplete="off" id="register">Join the show</button>
+		</span>
+	</div>
+			
+	<div class="panel-heading">
+			<h3 class="panel-title">My Video Performance<span class="label label-primary" id="publisher"></span>
+			</h3>
+			<div class="panel-body" id="videolocal"></div>
+	</div>
+	<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Remote Performer #1 <span class="label label-info hide" id="remote1"></span></h3>
+			</div>
+			<div class="panel-body relative" id="videoremote1"></div>
+							
+	</div>
+</body>
+</html>
