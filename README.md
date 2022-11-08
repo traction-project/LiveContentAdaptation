@@ -4,6 +4,10 @@ This repository contains the Live Content Adaptation Algorithm for the TRACTION 
 
 <img src="https://www.traction-project.eu/wp-content/uploads/sites/3/2020/02/Logo-cabecera-Traction.png" align="left"/><em>This algorithm was originally developed as part of the <a href="https://www.traction-project.eu/">TRACTION</a> project, funded by the European Commission’s <a hef="http://ec.europa.eu/programmes/horizon2020/">Horizon 2020</a> research and innovation programme under grant agreement No. 870610.</em>
 
+## Documentation
+
+The documentation is available here: https://traction-project.github.io/LiveContentAdaptation
+
 ## Setup
 
 The TRACTION Live Content Adaptation Algorithm is deployed with the WebRTC. The deployment was done using [Janus WebRTC server]([url](https://janus.conf.meetecho.com/)). The algorithm is implemented in `/LiveContentAdaptation/src`. The algorithm make use of the videoroom plugin of Janus. The file containing the algorithm's logic is `streamadapt.js`.
