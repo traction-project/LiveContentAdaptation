@@ -61,9 +61,3 @@ To be able to add or modify the algorithm, you need to do the following steps:
 ## Janus WebRTC Documentation
 
 [Full Documentation]([url](https://janus.conf.meetecho.com/docs/)) is available describing all methods, interfaces, properties, and events.
-
-
-## Documentation
-
-The documentation is available here: https://traction-project.github.io/LiveContentAdaptation
-
